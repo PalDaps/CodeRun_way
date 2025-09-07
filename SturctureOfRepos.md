@@ -43,3 +43,10 @@ P.S. | XX.XX.XXXX | XX:XX: - Additional notes, comments, or observations.
        If no date is provided, the note was made during the process of solving the task.
 
 */
+```
+
+## 3. Improving the Structure
+
+To make the repository even more useful and visual:
+
+- Add a .excalidraw file in each folder (Attempt/, OwnOptimal/, Optimal/) to schematically represent the solution or algorithm.
