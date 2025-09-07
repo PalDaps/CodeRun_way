@@ -56,7 +56,7 @@ public:
 			    Recursive(NewRow, NewCol, n, m, Result);
 		}
 	}
-};
+}; 
 
 int main() 
 {
