@@ -2,12 +2,13 @@
 
 ## 1. General Repository Structure
 
+```
 CodeRun_way/
 ├── CodeRun_i/        # Folder for each task
 │   ├── Attempt/      # Attempts to solve the task on your own
 │   ├── OwnOptimal/   # My own optimal solutions
 │   └── Optimal/      # Optimal solutions (mix of my approach + internet solutions + other users' solutions)
-
+```
 ---
 
 ### Folder Descriptions:
