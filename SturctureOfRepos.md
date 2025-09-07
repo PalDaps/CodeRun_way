@@ -50,3 +50,4 @@ P.S. | XX.XX.XXXX | XX:XX: - Additional notes, comments, or observations.
 To make the repository even more useful and visual:
 
 - Add a .excalidraw file in each folder (Attempt/, OwnOptimal/, Optimal/) to schematically represent the solution or algorithm.
+- Add a test.cpp file in each task folder to store test cases. This file can be used to quickly run your solution against sample inputs and check correctness.
