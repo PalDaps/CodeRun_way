@@ -51,3 +51,4 @@ To make the repository even more useful and visual:
 
 - Add a .excalidraw file in each folder (Attempt/, OwnOptimal/, Optimal/) to schematically represent the solution or algorithm.
 - Add a test.cpp file in each task folder to store test cases. This file can be used to quickly run your solution against sample inputs and check correctness.
+- Add folders like easy, medium, hard for sorting tasks. And within them, various topics such as graphs, strings, dp, binary search, etc. Or vice versa.
