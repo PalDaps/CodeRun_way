@@ -21,7 +21,7 @@ Solution:
 The main algorithm works as follows:
 
 1. Remove the first element from the queue.
-2.  Look at all of its neighbours. If a neighbour has not yet been assigned a distance from the starting point, update it.
+2. Look at all of its neighbours. If a neighbour has not yet been assigned a distance from the starting point, update it.
 3. Add that neighbour to the queue so that its own neighbours can be explored later.
 
 P.S. The only thing I don’t understand is why here in if (AdjMatrix[Point][Neighbour]) we check the neighbours with respect 
@@ -97,6 +97,7 @@ int main()
 
 	Solution Daps;
 	std::cout << Daps.BfsAdjacencyMartix(AdjMatrix, Start, Finish);
+	
 
 	return 0;
 }
