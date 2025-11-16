@@ -10,7 +10,7 @@
 Task: The first line specifies two numbers: n—the number of problems created by people and k—the number of problems required in the contest. The second line 
 lists n numbers, where each number determines the topic to which the i-th problem belongs (numbering starts with 1).
 
-Idea: Use a set to select unique values ​​from the initial vector. Then form a new vector based on length k
+Idea: Set for storing unique task topics. A vector with a boolean type for tracking which tasks can be added after the unique ones
 
 Solution:
 
@@ -23,22 +23,34 @@ class Solution
 public:
 	std::vector<int> QualifyingСontest(std::vector<int>& Tasks, int k)
 	{
-        std::set<int> UniqueTasks(Tasks.begin(), Tasks.end());
+        int Size = Tasks.size();
 
-        int Size = UniqueTasks.size();
-
+        std::set<int> UniqueTasks;
+        std::vector<bool> UsedProblem(Size);
         std::vector<int> Сontest;
 
-        for(auto i : UniqueTasks)
+        for(size_t i = 0; i < Size; i++)
         {
-            if (Сontest.size() >= k) break;
-            Сontest.push_back(i);
+            int Task = Tasks[i];
+            if(!UniqueTasks.count(Task))
+            {
+                UniqueTasks.insert(Task);
+                UsedProblem[i] = true;
+            }
         }
 
-        for(auto i : Tasks)
+        for(auto UniqueTask : UniqueTasks)
         {
-            if (Сontest.size() >= k) break;
-            Сontest.push_back(i);
+            if(Сontest.size() >= k) break;
+            
+            Сontest.push_back(UniqueTask);
+        }
+
+        for(size_t i = 0; i < Size; i++)
+        {
+            if(Сontest.size() >= k) break;
+
+            if(!UsedProblem[i]) Сontest.push_back(Tasks[i]);
         }
 
         return Сontest;
@@ -58,8 +70,6 @@ int main()
 
     Solution Daps;
     std::vector<int> Сontest = Daps.QualifyingСontest(Task, k);
-
-    std::cout << "Answer" << std::endl;
     
     for(size_t i = 0; i < Сontest.size(); i++)
     {
