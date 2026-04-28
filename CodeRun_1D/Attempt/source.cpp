@@ -3,7 +3,6 @@
 #include <set>
 
 /*
-
 05.10.2025
 16:29
 
@@ -15,7 +14,6 @@ Idea: Set for storing unique task topics. A vector with a boolean type for track
 Solution:
 
 Brainstorm:
-
 */
 
 class Solution
