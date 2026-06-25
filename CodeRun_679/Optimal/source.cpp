@@ -10,7 +10,18 @@ according to the following algorithm: at each iteration, the last digit of the r
 
 Idea: find a pattern in adding the last digit to a number. 2 -> 4 -> 8 -> 6 it's cycle in each 
 
-Solution:
+Pattern: Cycle detection / Last digit cycle / Batch simulation
+
+Solution: 
+
+Why odd n is processed separately:
+If n is odd, after one operation it either:
+
+enters the cycle 2 -> 4 -> 8 -> 6
+or becomes a number ending with 0 and stops changing
+
+k / 4 means: how many full cycles of 4 operations are inside k
+k % 4 means: how many operations are left after full cycles
 
 Brainstorm: 
 
