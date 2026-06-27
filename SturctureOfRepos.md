@@ -45,6 +45,8 @@ Pattern: - To which well-known patterns does the task belong?
 
 Solution: - Detailed description of the solution. You can describe each line of code as thoroughly as needed.
 
+Complexity: - I calculate the algorithm's complexity to gauge its computational value.
+
 Brainstorm: - Space for recording thoughts, ideas, and reasoning during the problem-solving process.
 
 P.S. | XX.XX.XXXX | XX:XX: - Additional notes, comments, or observations.
